@@ -2,12 +2,16 @@ import praw
 from gtts import gTTS
 import os
 import json
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # Reddit API Bilgileri
 reddit = praw.Reddit(
-    client_id='usmC7a4FwMvpXx6VlliFow',
-    client_secret='vhtuIhTGxtgL_0IJ-jAfg0xuK7NQPg',
-    user_agent='StoryCollector/0.1 by YourRedditUsername'
+    client_id= os.getenv('CLIENT_ID'),
+    client_secret=os.getenv('CLIENT_SECRET'),
+    user_agent=os.getenv('USER_AGENT')
 )
 
 # Hedef subreddit'ler

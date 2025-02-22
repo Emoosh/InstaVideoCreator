@@ -1,0 +1,25 @@
+# .env dosyası (API anahtarlarını içerir)
+.env
+
+# Python cache dosyaları
+__pycache__/
+*.pyc
+
+# Sanal ortam klasörü
+.venv/
+env/
+
+# IDE ayar dosyaları
+.vscode/
+*.code-workspace
+.idea/
+
+# Ses dosyaları (isteğe bağlı)
+*.mp3
+*.wav
+
+# JSON Çıktıları (isteğe bağlı)
+*.json
+
+# MacOS sistem dosyası
+.DS_Store
